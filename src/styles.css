@@ -878,3 +878,181 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .site-header {
+    position: sticky;
+  }
+
+  .utility-bar {
+    grid-template-columns: auto 1fr;
+    gap: 10px 14px;
+    padding: 10px 16px 9px;
+  }
+
+  .brand-lockup {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .brand-lockup strong {
+    font-size: 1.06rem;
+    line-height: 1.08;
+  }
+
+  .brand-lockup small {
+    margin-top: 2px;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+  }
+
+  .language-select {
+    grid-column: 1;
+    grid-row: 2;
+    gap: 7px;
+    font-size: 0.82rem;
+  }
+
+  .language-select select {
+    max-width: 126px;
+    min-height: 36px;
+    padding: 6px 26px 6px 12px;
+    font-size: 0.84rem;
+  }
+
+  .header-icons {
+    display: none;
+  }
+
+  .main-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 22px;
+    overflow-x: auto;
+    padding: 11px 16px 12px;
+    font-size: 0.92rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav a {
+    flex: 0 0 auto;
+  }
+
+  .content-section {
+    scroll-margin-top: 126px;
+    padding: 42px 18px;
+  }
+
+  .about-section {
+    padding-top: 48px;
+  }
+
+  .brand-introduction,
+  .chef-profile,
+  .two-column,
+  .contact-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .brand-introduction-copy,
+  .chef-copy {
+    max-width: none;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+  }
+
+  h2,
+  .brand-introduction-copy h2 {
+    max-width: 12em;
+    font-size: clamp(1.58rem, 8vw, 2.2rem);
+    line-height: 1.24;
+  }
+
+  .section-body,
+  .section-heading p {
+    font-size: 0.96rem;
+    line-height: 1.78;
+  }
+
+  .brand-divider {
+    grid-template-columns: minmax(42px, 1fr) auto minmax(42px, 1fr);
+    gap: 13px;
+    margin: 18px 0 24px;
+  }
+
+  .brand-paragraphs {
+    gap: 14px;
+  }
+
+  .brand-introduction-image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .chef-profile {
+    margin-top: 46px;
+  }
+
+  .chef-photo-frame::after {
+    border-width: 10px;
+  }
+
+  .chef-photo-frame img {
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .chef-copy blockquote {
+    margin: 20px 0;
+    padding-left: 16px;
+    font-size: 1.08rem;
+    line-height: 1.65;
+  }
+
+  .chef-credentials {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .chef-credentials article {
+    padding: 15px;
+  }
+
+  .chef-credentials h3 {
+    font-size: 0.98rem;
+  }
+
+  .chef-credentials p {
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+  .hero-section {
+    padding: 18px 14px 38px;
+  }
+
+  .hero-frame {
+    min-height: 500px;
+  }
+
+  .hero-copy {
+    min-height: 500px;
+    padding: 24px 20px;
+  }
+}

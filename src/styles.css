@@ -1006,8 +1006,12 @@ h2 {
     aspect-ratio: 4 / 3;
   }
 
+  .brand-introduction-image {
+    margin-bottom: 4px;
+  }
+
   .chef-profile {
-    margin-top: 46px;
+    margin-top: 64px;
   }
 
   .chef-photo-frame::after {

@@ -1,11 +1,7 @@
+import { Link, NavLink } from 'react-router-dom';
 import { navigation } from '../config/navigation.js';
 
 function Header({ content, language, onLanguageChange }) {
-  const handleNavClick = (event, id) => {
-    event.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
   return (
     <header className="site-header">
       <div className="utility-bar">
@@ -21,7 +17,7 @@ function Header({ content, language, onLanguageChange }) {
           </select>
         </label>
 
-        <a className="brand-lockup" href="#home" onClick={(event) => handleNavClick(event, 'home')}>
+        <Link className="brand-lockup" to="/">
           <span className="brand-mark" aria-hidden="true">
             {content.brand.mark}
           </span>
@@ -29,7 +25,7 @@ function Header({ content, language, onLanguageChange }) {
             <strong>{content.brand.name}</strong>
             <small>{content.brand.subtitle}</small>
           </span>
-        </a>
+        </Link>
 
         <div className="header-icons" aria-label="Header actions">
           <button type="button" aria-label={content.header.icons.account}>
@@ -46,9 +42,14 @@ function Header({ content, language, onLanguageChange }) {
 
       <nav className="main-nav" aria-label="Primary navigation">
         {navigation.map((item) => (
-          <a key={item.id} href={`#${item.id}`} onClick={(event) => handleNavClick(event, item.id)}>
+          <NavLink
+            key={item.path}
+            to={item.path}
+            end={item.end}
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
             {content.nav[item.labelKey]}
-          </a>
+          </NavLink>
         ))}
       </nav>
     </header>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero-dessert.svg';
 
 function Hero({ content }) {
@@ -10,8 +11,8 @@ function Hero({ content }) {
           <h1>{content.hero.title}</h1>
           <p>{content.hero.body}</p>
           <div className="hero-actions">
-            <a href="#products">{content.hero.cta}</a>
-            <a href="#order">{content.hero.secondaryCta}</a>
+            <Link to="/products">{content.hero.cta}</Link>
+            <Link to="/notice">{content.hero.secondaryCta}</Link>
           </div>
         </div>
       </div>

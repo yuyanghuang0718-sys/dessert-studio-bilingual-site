@@ -28,11 +28,49 @@ export const en = {
     cta: 'View Products',
     secondaryCta: 'Order Details',
   },
+  homeIntro: {
+    eyebrow: 'Our Studio',
+    title: 'Small-batch desserts with a quiet, polished glow',
+    body: 'We work by reservation so each cake, pastry, and gift box can be prepared with care. From palette and flavor to pickup timing, every order is designed to feel clear, gentle, and unhurried.',
+    link: 'About Lumiere',
+  },
   about: {
-    eyebrow: 'About Us',
+    eyebrow: 'Brand Introduction',
     title: 'Handcrafted desserts with quiet detail and warmth',
-    body: 'Lumiere Dessert Studio is a small made-to-order dessert studio. We believe desserts are more than table decoration; they are a graceful way to express care. Each cake and pastry is designed with soft colors, clean lines, and refined flavors for birthdays, parties, wedding teas, and daily gifting.',
-    highlights: ['Made to order', 'Light sweetness', 'Seasonal specials', 'Custom discussion'],
+    imageAlt: 'Lumiere Dessert Studio brand dessert image',
+    paragraphs: [
+      'Lumiere Dessert Studio is a small made-to-order dessert studio. We believe desserts are more than table decoration; they are a graceful way to express care.',
+      'Each cake and pastry is designed with soft colors, clean lines, and refined flavors for birthdays, parties, wedding teas, and daily gifting.',
+    ],
+  },
+  chef: {
+    eyebrow: 'Chef Profile',
+    title: 'Balancing refined technique with everyday warmth',
+    photoAlt: 'Chef portrait for Lumiere Dessert Studio',
+    body: 'Our chef turns everyday memories into gentle desserts, shaping fruit brightness, cream textures, and tea aromas with a clean, refined hand. Each piece avoids unnecessary decoration and lets flavor, proportion, and the trace of handcraft remain visible.',
+    philosophy: '“Dessert does not need to be loud. The right sweetness and warmth can make a day memorable.”',
+    credentials: [
+      {
+        label: '01',
+        title: 'French pastry foundations',
+        body: 'Experienced with tart shells, mousse, cream cakes, and petite pastries.',
+      },
+      {
+        label: '02',
+        title: 'Seasonal flavor design',
+        body: 'Builds light layers with fruit, tea, nuts, and dairy notes.',
+      },
+      {
+        label: '03',
+        title: 'Custom dessert planning',
+        body: 'Adjusts cakes by occasion, color palette, and serving size.',
+      },
+      {
+        label: '04',
+        title: 'Small-batch handcraft',
+        body: 'Keeps quality steady while preserving warmth and detail.',
+      },
+    ],
   },
   products: {
     eyebrow: 'Desserts',

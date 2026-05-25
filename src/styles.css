@@ -249,8 +249,13 @@ select {
   content: "";
 }
 
-.main-nav a:hover::after {
+.main-nav a:hover::after,
+.main-nav a.active::after {
   transform: scaleX(1);
+}
+
+.main-nav a.active {
+  color: #8d5b55;
 }
 
 .hero-section {
@@ -357,6 +362,34 @@ h1 {
   color: #fffdf9;
 }
 
+.home-intro-section {
+  padding-top: 42px;
+}
+
+.home-intro {
+  max-width: 860px;
+  border-top: 1px solid var(--line);
+  padding-top: 48px;
+  text-align: center;
+}
+
+.home-intro .section-body {
+  max-width: 720px;
+  margin: 0 auto 24px;
+}
+
+.home-intro a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--mist-pink);
+  border-radius: 999px;
+  padding: 10px 20px;
+  color: #8d5b55;
+  font-weight: 700;
+}
+
 .content-section {
   scroll-margin-top: 150px;
   padding: 82px clamp(18px, 5vw, 72px);
@@ -404,6 +437,150 @@ h2 {
   background: var(--white);
   padding: 9px 16px;
   color: #5b4943;
+}
+
+.brand-introduction {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(36px, 7vw, 96px);
+  align-items: center;
+}
+
+.brand-introduction-copy {
+  max-width: 560px;
+}
+
+.brand-introduction-copy h2 {
+  max-width: 9em;
+}
+
+.brand-divider {
+  display: grid;
+  grid-template-columns: minmax(54px, 1fr) auto minmax(54px, 1fr);
+  align-items: center;
+  gap: 18px;
+  max-width: 430px;
+  margin: 26px 0 34px;
+  color: var(--mist-pink);
+}
+
+.brand-divider span {
+  height: 1px;
+  background: var(--blush);
+}
+
+.brand-divider i {
+  color: #c9a39e;
+  font-size: 1.05rem;
+  font-style: normal;
+  line-height: 1;
+}
+
+.brand-paragraphs {
+  display: grid;
+  gap: 18px;
+}
+
+.brand-paragraphs .section-body {
+  margin: 0;
+}
+
+.brand-introduction-image {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--cream-deep);
+  box-shadow: var(--shadow);
+}
+
+.brand-introduction-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.chef-profile {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(34px, 6vw, 82px);
+  align-items: center;
+  margin-top: clamp(64px, 9vw, 120px);
+}
+
+.chef-photo-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--cream-deep);
+  box-shadow: var(--shadow);
+}
+
+.chef-photo-frame::after {
+  position: absolute;
+  inset: 0;
+  border: 16px solid rgba(255, 253, 249, 0.28);
+  content: "";
+  pointer-events: none;
+}
+
+.chef-photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 44% 48%;
+}
+
+.chef-copy {
+  max-width: 680px;
+}
+
+.chef-copy blockquote {
+  margin: 28px 0;
+  border-left: 3px solid var(--mist-pink);
+  padding: 4px 0 4px 22px;
+  color: #8d5b55;
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  line-height: 1.75;
+}
+
+.chef-credentials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.chef-credentials article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 249, 0.82);
+  padding: 18px;
+}
+
+.chef-credentials span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--mist-pink);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.chef-credentials h3 {
+  margin-bottom: 8px;
+  color: var(--cocoa);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.chef-credentials p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
 }
 
 .product-section {
@@ -569,8 +746,22 @@ h2 {
   }
 
   .two-column,
-  .contact-panel {
+  .contact-panel,
+  .brand-introduction,
+  .chef-profile {
     grid-template-columns: 1fr;
+  }
+
+  .brand-introduction-copy {
+    max-width: none;
+  }
+
+  .brand-introduction-copy h2 {
+    max-width: 10em;
+  }
+
+  .chef-copy {
+    max-width: none;
   }
 }
 
@@ -664,5 +855,26 @@ h2 {
 
   .notice-list li {
     padding-right: 14px;
+  }
+
+  .brand-divider {
+    max-width: none;
+    margin: 22px 0 28px;
+  }
+
+  .brand-introduction-image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .chef-profile {
+    margin-top: 54px;
+  }
+
+  .chef-photo-frame img {
+    aspect-ratio: 1 / 1.08;
+  }
+
+  .chef-credentials {
+    grid-template-columns: 1fr;
   }
 }

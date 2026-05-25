@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import About from './components/About.jsx';
-import ProductSection from './components/ProductSection.jsx';
-import OrderNotice from './components/OrderNotice.jsx';
-import Contact from './components/Contact.jsx';
+import HomePage from './pages/HomePage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import ProductsPage from './pages/ProductsPage.jsx';
+import NoticePage from './pages/NoticePage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import { zh } from './content/zh.js';
 import { en } from './content/en.js';
 
@@ -18,16 +19,20 @@ function App() {
   const content = useMemo(() => contentMap[language], [language]);
 
   return (
-    <div className="site-shell">
-      <Header content={content} language={language} onLanguageChange={setLanguage} />
-      <main>
-        <Hero content={content} />
-        <About content={content} />
-        <ProductSection content={content} language={language} />
-        <OrderNotice content={content} />
-        <Contact content={content} />
-      </main>
-    </div>
+    <BrowserRouter>
+      <div className="site-shell">
+        <Header content={content} language={language} onLanguageChange={setLanguage} />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage content={content} />} />
+            <Route path="/about" element={<AboutPage content={content} />} />
+            <Route path="/products" element={<ProductsPage content={content} language={language} />} />
+            <Route path="/notice" element={<NoticePage content={content} />} />
+            <Route path="/contact" element={<ContactPage content={content} />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 

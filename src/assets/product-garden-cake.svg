@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="Garden cream cake placeholder">
+  <rect width="720" height="540" fill="#fbf7f1"/>
+  <rect x="56" y="58" width="608" height="424" rx="18" fill="#ead8c6"/>
+  <ellipse cx="360" cy="366" rx="230" ry="62" fill="#fffdf9"/>
+  <path d="M170 236 C190 142 284 106 390 116 C514 128 586 200 556 305 C526 410 420 430 300 405 C205 385 150 324 170 236 Z" fill="#c7a681"/>
+  <path d="M178 218 C244 132 372 126 478 162 C536 182 566 230 558 290 C450 328 298 326 188 258 C180 246 176 232 178 218 Z" fill="#fffaf4"/>
+  <circle cx="290" cy="228" r="38" fill="#f2d8d3"/>
+  <circle cx="374" cy="202" r="42" fill="#fffdf9"/>
+  <circle cx="460" cy="244" r="36" fill="#d9a7a2"/>
+  <circle cx="340" cy="304" r="34" fill="#f0c9c5"/>
+  <circle cx="432" cy="316" r="38" fill="#fff8ee"/>
+  <g fill="#dde2c4">
+    <ellipse cx="252" cy="268" rx="16" ry="8" transform="rotate(-30 252 268)"/>
+    <ellipse cx="492" cy="290" rx="16" ry="8" transform="rotate(28 492 290)"/>
+    <ellipse cx="386" cy="340" rx="16" ry="8" transform="rotate(-42 386 340)"/>
+  </g>
+</svg>

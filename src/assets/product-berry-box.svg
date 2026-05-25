@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="Seasonal berry gift box placeholder">
+  <rect width="720" height="540" fill="#fbf7f1"/>
+  <rect x="54" y="58" width="612" height="424" rx="18" fill="#e8d8c5"/>
+  <rect x="160" y="156" width="400" height="260" rx="22" fill="#fffdf9"/>
+  <rect x="190" y="184" width="340" height="204" rx="14" fill="#f6e9df"/>
+  <g>
+    <circle cx="270" cy="252" r="40" fill="#d9a7a2"/>
+    <circle cx="360" cy="252" r="40" fill="#fff8ee"/>
+    <circle cx="450" cy="252" r="40" fill="#c9827a"/>
+    <circle cx="314" cy="324" r="40" fill="#fffaf4"/>
+    <circle cx="406" cy="324" r="40" fill="#f2d8d3"/>
+  </g>
+  <g fill="#8d5b55">
+    <circle cx="255" cy="242" r="6"/>
+    <circle cx="281" cy="262" r="6"/>
+    <circle cx="436" cy="242" r="6"/>
+    <circle cx="464" cy="262" r="6"/>
+  </g>
+  <path d="M360 156 L360 416" stroke="#d9a7a2" stroke-width="10" opacity="0.45"/>
+  <path d="M160 286 L560 286" stroke="#d9a7a2" stroke-width="10" opacity="0.45"/>
+</svg>

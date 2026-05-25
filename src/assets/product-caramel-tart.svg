@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="Caramel vanilla custard tart placeholder">
+  <rect width="720" height="540" fill="#fffaf4"/>
+  <rect x="54" y="58" width="612" height="424" rx="18" fill="#f1e3d4"/>
+  <ellipse cx="360" cy="382" rx="245" ry="62" fill="#fffdf9"/>
+  <circle cx="360" cy="252" r="154" fill="#b78a62"/>
+  <circle cx="360" cy="244" r="128" fill="#f0d0a6"/>
+  <circle cx="360" cy="244" r="94" fill="#d49b67"/>
+  <path d="M278 205 C334 168 405 174 450 218 C416 204 368 202 326 214 C304 220 288 218 278 205 Z" fill="#fff4de" opacity="0.72"/>
+  <g fill="#f7e6cc">
+    <circle cx="282" cy="264" r="11"/>
+    <circle cx="436" cy="264" r="11"/>
+    <circle cx="360" cy="166" r="10"/>
+    <circle cx="360" cy="340" r="10"/>
+  </g>
+</svg>

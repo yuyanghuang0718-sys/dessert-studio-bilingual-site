@@ -1011,7 +1011,40 @@ h2 {
   }
 
   .chef-profile {
+    display: flex;
+    flex-direction: column;
     margin-top: 64px;
+  }
+
+  .chef-copy {
+    display: contents;
+  }
+
+  .chef-copy .eyebrow {
+    order: 1;
+  }
+
+  .chef-copy h2 {
+    order: 2;
+  }
+
+  .chef-photo-frame {
+    order: 3;
+    width: 100%;
+    margin: 6px 0 4px;
+  }
+
+  .chef-copy .section-body {
+    order: 4;
+  }
+
+  .chef-copy blockquote {
+    order: 5;
+  }
+
+  .chef-credentials {
+    order: 6;
+    width: 100%;
   }
 
   .chef-photo-frame::after {

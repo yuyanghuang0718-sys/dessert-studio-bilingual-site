@@ -25,6 +25,7 @@ function About({ content }) {
           <img src={brandImage} alt={content.about.imageAlt} />
         </div>
       </div>
+
       <div className="section-inner chef-profile">
         <div className="chef-photo-frame">
           <img src={chefPhoto} alt={content.chef.photoAlt} />
@@ -34,15 +35,22 @@ function About({ content }) {
           <h2>{content.chef.title}</h2>
           <p className="section-body">{content.chef.body}</p>
           <blockquote>{content.chef.philosophy}</blockquote>
-          <div className="chef-credentials">
-            {content.chef.credentials.map((item) => (
-              <article key={item.title}>
-                <span>{item.label}</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
-          </div>
+        </div>
+      </div>
+
+      <div className="section-inner chef-timeline-section">
+        <div className="timeline-heading">
+          <p className="eyebrow">{content.chef.timelineEyebrow}</p>
+          <h2>{content.chef.timelineTitle}</h2>
+        </div>
+        <div className="chef-timeline">
+          {content.chef.timeline.map((item) => (
+            <article className="timeline-item" key={`${item.year}-${item.title}`}>
+              <time>{item.year}</time>
+              <span aria-hidden="true" />
+              <p>{item.title}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>

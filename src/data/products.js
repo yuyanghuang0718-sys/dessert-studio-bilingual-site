@@ -1,59 +1,127 @@
-import gardenCake from '../assets/product-garden-cake.svg';
-import caramelTart from '../assets/product-caramel-tart.svg';
-import berryBox from '../assets/product-berry-box.svg';
-import petitFours from '../assets/product-petit-fours.svg';
+import almondTuile from '../assets/products/almond-tuile.jpg';
+import appleMadeleine from '../assets/products/apple-madeleine.jpg';
+import canele from '../assets/products/canele.jpg';
+import creamPuff from '../assets/products/cream-puff.jpg';
+import financier from '../assets/products/financier.jpg';
+import originalMadeleine from '../assets/products/original-madeleine.jpg';
+import porkFlossCookies from '../assets/products/pork-floss-cookies.jpg';
 
 export const products = [
   {
-    id: 'garden-cream-cake',
-    image: gardenCake,
-    price: 'NT$1,280',
+    id: 'caramel-vanilla-creme-brulee',
+    image: canele,
+    price: 'NT$70 / each',
     name: {
-      zh: '花園鮮奶油蛋糕',
-      en: 'Garden Cream Cake',
+      zh: '焦糖香草烤布雷',
+      en: 'Caramel Vanilla Crème Brûlée',
     },
-    description: {
-      zh: '柔和霧粉花飾、季節水果與輕盈鮮奶油，適合生日與小型慶祝。',
-      en: 'Soft blush floral details, seasonal fruit, and airy cream for birthdays and intimate celebrations.',
+    storage: {
+      zh: '冷藏五天',
+      en: 'Refrigerated for 5 days',
     },
   },
   {
-    id: 'caramel-vanilla-custard-tart',
-    image: caramelTart,
-    price: 'NT$880',
+    id: 'almond-tuile',
+    image: almondTuile,
+    price: 'NT$300 / box',
     name: {
-      zh: '焦糖香草布丁塔',
-      en: 'Caramel Vanilla Custard Tart',
+      zh: '杏仁瓦片',
+      en: 'Almond Tuile',
     },
-    description: {
-      zh: '酥脆塔皮搭配香草布丁餡與焦糖光澤，口感細緻不過甜。',
-      en: 'Crisp tart shell with vanilla custard and a polished caramel finish, delicate and lightly sweet.',
+    storage: {
+      zh: '常溫兩週',
+      en: 'Room temperature for 2 weeks',
     },
   },
   {
-    id: 'seasonal-berry-gift-box',
-    image: berryBox,
-    price: 'NT$1,080',
+    id: 'panna-cotta',
+    image: creamPuff,
+    price: 'NT$70 / each',
     name: {
-      zh: '季節莓果禮盒',
-      en: 'Seasonal Berry Gift Box',
+      zh: '奶酪',
+      en: 'Panna Cotta',
     },
-    description: {
-      zh: '以莓果酸香、奶油香氣與小份量甜點組合，適合送禮與下午茶。',
-      en: 'A gift-ready selection of berry notes, cream aromas, and petite desserts for tea time.',
+    storage: {
+      zh: '冷藏五天',
+      en: 'Refrigerated for 5 days',
     },
   },
   {
-    id: 'handmade-french-petit-fours',
-    image: petitFours,
-    price: 'NT$720',
+    id: 'apple-cinnamon-madeleine',
+    image: appleMadeleine,
+    price: 'NT$75 / each',
     name: {
-      zh: '手工法式小點',
-      en: 'Handmade French Petit Fours',
+      zh: '蘋果肉桂瑪德蓮',
+      en: 'Apple Cinnamon Madeleine',
     },
-    description: {
-      zh: '迷你瑪德蓮、達克瓦茲與奶油小塔，以低彩度色系呈現精緻口感。',
-      en: 'Mini madeleines, dacquoise, and cream tartlets in a muted palette with refined textures.',
+    storage: {
+      zh: '冷藏五天／常溫當天',
+      en: 'Refrigerated for 5 days / Room temperature on the same day',
+    },
+  },
+  {
+    id: 'original-cinnamon-madeleine',
+    image: originalMadeleine,
+    price: 'NT$65 / each',
+    name: {
+      zh: '原味肉桂瑪德蓮',
+      en: 'Original Cinnamon Madeleine',
+    },
+    storage: {
+      zh: '冷藏五天／常溫當天',
+      en: 'Refrigerated for 5 days / Room temperature on the same day',
+    },
+  },
+  {
+    id: 'pork-floss-cookies',
+    image: porkFlossCookies,
+    price: 'NT$300 / box',
+    name: {
+      zh: '肉鬆餅乾',
+      en: 'Pork Floss Cookies',
+    },
+    storage: {
+      zh: '常溫兩週',
+      en: 'Room temperature for 2 weeks',
+    },
+  },
+  {
+    id: 'financier',
+    image: financier,
+    price: 'NT$65 / each',
+    name: {
+      zh: '費南雪',
+      en: 'Financier',
+    },
+    storage: {
+      zh: '冷藏五天／常溫當天',
+      en: 'Refrigerated for 5 days / Room temperature on the same day',
+    },
+  },
+  {
+    id: 'cream-puff',
+    image: creamPuff,
+    price: 'NT$60 / each',
+    name: {
+      zh: '泡芙',
+      en: 'Cream Puff',
+    },
+    storage: {
+      zh: '冷藏當天／常溫當天',
+      en: 'Refrigerated on the same day / Room temperature on the same day',
+    },
+  },
+  {
+    id: 'canele',
+    image: canele,
+    price: 'NT$80 / each',
+    name: {
+      zh: '可麗露',
+      en: 'Canelé',
+    },
+    storage: {
+      zh: '冷凍兩週',
+      en: 'Frozen for 2 weeks',
     },
   },
 ];

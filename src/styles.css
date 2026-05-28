@@ -128,7 +128,8 @@ select {
   gap: 14px;
 }
 
-.header-icons button {
+.header-icons button,
+.instagram-link {
   display: grid;
   width: 38px;
   height: 38px;
@@ -137,10 +138,28 @@ select {
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease,
+    background 160ms ease;
 }
 
-.header-icons button:hover {
+.header-icons button:hover,
+.instagram-link:hover {
   background: var(--cream-deep);
+  opacity: 0.78;
+  transform: scale(1.04);
+}
+
+.instagram-link svg,
+.contact-instagram-button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .icon-person,
@@ -583,6 +602,70 @@ h2 {
   line-height: 1.7;
 }
 
+.chef-timeline-section {
+  margin-top: clamp(74px, 10vw, 132px);
+}
+
+.timeline-heading {
+  max-width: 760px;
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.chef-timeline {
+  display: grid;
+  gap: 0;
+  max-width: 860px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 34px minmax(0, 1fr);
+  align-items: start;
+  min-height: 92px;
+}
+
+.timeline-item time {
+  color: #8d5b55;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.timeline-item > span {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  min-height: 92px;
+}
+
+.timeline-item > span::before {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #9d6c58;
+  content: "";
+}
+
+.timeline-item > span::after {
+  width: 1px;
+  flex: 1;
+  background: var(--line);
+  content: "";
+}
+
+.timeline-item:last-child > span::after {
+  display: none;
+}
+
+.timeline-item p {
+  margin: -2px 0 0;
+  color: var(--cocoa);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
 .product-section {
   background: #fffaf4;
 }
@@ -625,18 +708,42 @@ h2 {
   line-height: 1.35;
 }
 
-.product-card p {
-  min-height: 106px;
+.product-secondary-name {
+  min-height: auto;
+  margin-bottom: 16px;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
 }
 
-.product-card span {
-  display: inline-flex;
-  margin-top: 8px;
+.product-meta {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.product-meta div {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.product-meta dt {
+  margin-bottom: 4px;
+  color: var(--mist-pink);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.product-meta dd {
+  margin: 0;
   color: #8d5b55;
   font-weight: 700;
+  line-height: 1.45;
 }
 
 .order-section {
@@ -720,6 +827,11 @@ h2 {
   border-color: var(--mist-pink);
   background: #8d5b55;
   color: var(--white);
+  gap: 9px;
+}
+
+.contact-details a svg {
+  stroke: currentColor;
 }
 
 @media (max-width: 960px) {
@@ -929,7 +1041,16 @@ h2 {
   }
 
   .header-icons {
-    display: none;
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    gap: 0;
+  }
+
+  .instagram-link {
+    width: 34px;
+    height: 34px;
   }
 
   .main-nav {
@@ -1051,9 +1172,34 @@ h2 {
     order: 5;
   }
 
-  .chef-credentials {
-    order: 6;
-    width: 100%;
+  .chef-timeline-section {
+    margin-top: 54px;
+  }
+
+  .timeline-heading {
+    margin-bottom: 24px;
+  }
+
+  .chef-timeline {
+    max-width: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 92px 28px minmax(0, 1fr);
+    min-height: 86px;
+  }
+
+  .timeline-item time {
+    font-size: 0.88rem;
+  }
+
+  .timeline-item > span {
+    min-height: 86px;
+  }
+
+  .timeline-item p {
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
 
   .chef-photo-frame::after {

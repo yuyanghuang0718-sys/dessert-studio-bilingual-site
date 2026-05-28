@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import InstagramIcon from './InstagramIcon.jsx';
 import { navigation } from '../config/navigation.js';
 
 function Header({ content, language, onLanguageChange }) {
@@ -28,15 +29,16 @@ function Header({ content, language, onLanguageChange }) {
         </Link>
 
         <div className="header-icons" aria-label="Header actions">
-          <button type="button" aria-label={content.header.icons.account}>
-            <span className="icon-person" aria-hidden="true" />
-          </button>
-          <button type="button" aria-label={content.header.icons.note}>
-            <span className="icon-note" aria-hidden="true" />
-          </button>
-          <button type="button" aria-label={content.header.icons.search}>
-            <span className="icon-search" aria-hidden="true" />
-          </button>
+          <a
+            className="instagram-link"
+            href={content.instagram.url}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={content.header.icons.instagram}
+            title={content.instagram.handle}
+          >
+            <InstagramIcon />
+          </a>
         </div>
       </div>
 

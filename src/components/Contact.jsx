@@ -1,3 +1,5 @@
+import InstagramIcon from './InstagramIcon.jsx';
+
 function Contact({ content }) {
   return (
     <section className="content-section contact-section" id="contact">
@@ -14,7 +16,15 @@ function Contact({ content }) {
               {detail.value}
             </p>
           ))}
-          <a href="mailto:hello@lumiere-dessert.example">{content.contact.button}</a>
+          <a
+            className="contact-instagram-button"
+            href={content.instagram.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <InstagramIcon />
+            {content.contact.button}
+          </a>
         </div>
       </div>
     </section>

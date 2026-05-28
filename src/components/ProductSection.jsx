@@ -1,6 +1,8 @@
 import { products } from '../data/products.js';
 
 function ProductSection({ content, language }) {
+  const secondaryLanguage = language === 'zh' ? 'en' : 'zh';
+
   return (
     <section className="content-section product-section" id="products">
       <div className="section-inner">
@@ -16,10 +18,17 @@ function ProductSection({ content, language }) {
               <img src={product.image} alt={product.name[language]} />
               <div className="product-card-body">
                 <h3>{product.name[language]}</h3>
-                <p>{product.description[language]}</p>
-                <span>
-                  {content.products.priceLabel} {product.price}
-                </span>
+                <p className="product-secondary-name">{product.name[secondaryLanguage]}</p>
+                <dl className="product-meta">
+                  <div>
+                    <dt>{content.products.priceLabel}</dt>
+                    <dd>{product.price}</dd>
+                  </div>
+                  <div>
+                    <dt>{content.products.storageLabel}</dt>
+                    <dd>{product.storage[language]}</dd>
+                  </div>
+                </dl>
               </div>
             </article>
           ))}

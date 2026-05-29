@@ -524,15 +524,17 @@ h2 {
   min-height: 360px;
   align-items: center;
   justify-content: center;
-  padding: clamp(18px, 2.4vw, 32px);
+  padding: 6px;
 }
 
 .brand-logo-card img {
-  width: min(88%, 520px);
+  width: 96%;
   height: auto;
-  max-height: 88%;
+  max-height: 96%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  transform: scale(1.12);
+  transform-origin: center;
 }
 
 .chef-profile {
@@ -1018,12 +1020,12 @@ h2 {
 
   .brand-logo-card {
     min-height: 240px;
-    padding: 18px;
+    padding: 6px;
   }
 
   .brand-logo-card img {
-    width: min(84%, 300px);
-    max-height: 300px;
+    width: 94%;
+    max-height: 94%;
     aspect-ratio: 1 / 1;
   }
 
@@ -1181,10 +1183,11 @@ h2 {
   }
 
   .brand-logo-card img {
-    width: min(84%, 300px);
-    max-height: 300px;
+    width: 94%;
+    max-height: 94%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+    transform: scale(1.1);
   }
 
   .chef-profile {

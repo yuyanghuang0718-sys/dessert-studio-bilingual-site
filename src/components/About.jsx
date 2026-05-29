@@ -1,5 +1,5 @@
-import chefPhoto from '../assets/chef-photo.jpg';
-import brandImage from '../assets/hero-dessert.svg';
+import chefPhoto from '../assets/chef-photo.png';
+import brandImage from '../assets/timmy-dessert-logo.png';
 
 function About({ content }) {
   return (
@@ -21,7 +21,7 @@ function About({ content }) {
             ))}
           </div>
         </div>
-        <div className="brand-introduction-image">
+        <div className="brand-introduction-image brand-logo-card">
           <img src={brandImage} alt={content.about.imageAlt} />
         </div>
       </div>

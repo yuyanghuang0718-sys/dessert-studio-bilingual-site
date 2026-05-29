@@ -519,6 +519,23 @@ h2 {
   object-fit: cover;
 }
 
+.brand-logo-card {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 253, 249, 0.92), rgba(243, 234, 223, 0.72)),
+    var(--cream-deep);
+  padding: clamp(38px, 5vw, 72px);
+}
+
+.brand-logo-card img {
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
 .chef-profile {
   display: grid;
   grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1.14fr);
@@ -548,8 +565,9 @@ h2 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: 44% 48%;
+  object-fit: contain;
+  object-position: center;
+  background: var(--cream-deep);
 }
 
 .chef-copy {
@@ -693,7 +711,7 @@ h2 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
   background: var(--cream-deep);
 }
 
@@ -978,6 +996,16 @@ h2 {
     aspect-ratio: 4 / 3;
   }
 
+  .brand-logo-card {
+    min-height: 240px;
+    padding: 28px;
+  }
+
+  .brand-logo-card img {
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+  }
+
   .chef-profile {
     margin-top: 54px;
   }
@@ -1207,7 +1235,7 @@ h2 {
   }
 
   .chef-photo-frame img {
-    aspect-ratio: 1 / 1.05;
+    aspect-ratio: 3 / 4;
   }
 
   .chef-copy blockquote {

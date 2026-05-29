@@ -15,7 +15,11 @@ function ProductSection({ content, language }) {
         <div className="product-grid">
           {products.map((product) => (
             <article className="product-card" key={product.id}>
-              <img src={product.image} alt={product.name[language]} />
+              <img
+                className={`product-image product-image-${product.id}`}
+                src={product.image}
+                alt={product.name[language]}
+              />
               <div className="product-card-body">
                 <h3>{product.name[language]}</h3>
                 <p className="product-secondary-name">{product.name[secondaryLanguage]}</p>

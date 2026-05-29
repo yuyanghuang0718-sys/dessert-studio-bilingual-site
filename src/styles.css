@@ -152,7 +152,7 @@ select {
 }
 
 .instagram-link svg,
-.contact-instagram-button svg {
+.contact-instagram-icon svg {
   width: 22px;
   height: 22px;
   fill: none;
@@ -848,16 +848,27 @@ h2 {
   text-transform: uppercase;
 }
 
-.contact-details a {
+.contact-details .contact-instagram-icon {
   width: fit-content;
-  margin-top: 12px;
+  margin-top: 0;
   border-color: var(--mist-pink);
-  background: #8d5b55;
-  color: var(--white);
-  gap: 9px;
+  background: transparent;
+  color: var(--cocoa);
+  gap: 0;
+  min-height: 34px;
+  min-width: 34px;
+  padding: 5px;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
 }
 
-.contact-details a svg {
+.contact-details .contact-instagram-icon:hover {
+  opacity: 0.76;
+  transform: scale(1.05);
+}
+
+.contact-details .contact-instagram-icon svg {
   stroke: currentColor;
 }
 

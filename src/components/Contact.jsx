@@ -10,21 +10,27 @@ function Contact({ content }) {
           <p className="section-body">{content.contact.body}</p>
         </div>
         <div className="contact-details">
-          {content.contact.details.map((detail) => (
-            <p key={detail.label}>
-              <span>{detail.label}</span>
-              {detail.value}
-            </p>
-          ))}
-          <a
-            className="contact-instagram-button"
-            href={content.instagram.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <InstagramIcon />
-            {content.contact.button}
-          </a>
+          {content.contact.details.map((detail) =>
+            detail.label === 'Instagram' ? (
+              <p key={detail.label}>
+                <span>{detail.label}</span>
+                <a
+                  className="contact-instagram-icon"
+                  href={content.instagram.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={content.instagram.label}
+                >
+                  <InstagramIcon />
+                </a>
+              </p>
+            ) : (
+              <p key={detail.label}>
+                <span>{detail.label}</span>
+                {detail.value}
+              </p>
+            ),
+          )}
         </div>
       </div>
     </section>

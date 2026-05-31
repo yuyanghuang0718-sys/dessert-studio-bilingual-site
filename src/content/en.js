@@ -70,7 +70,6 @@ export const en = {
   products: {
     eyebrow: 'Desserts',
     title: 'Products',
-    body: 'Official products are listed below. For bulk orders or collaboration inquiries, please contact us through Instagram DM.',
     priceLabel: 'Price',
     storageLabel: 'Storage',
   },

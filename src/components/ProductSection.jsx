@@ -9,7 +9,6 @@ function ProductSection({ content, language }) {
         <div className="section-heading">
           <p className="eyebrow">{content.products.eyebrow}</p>
           <h2>{content.products.title}</h2>
-          <p>{content.products.body}</p>
         </div>
 
         <div className="product-grid">

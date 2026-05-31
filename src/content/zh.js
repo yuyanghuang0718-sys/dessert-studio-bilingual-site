@@ -70,7 +70,6 @@ export const zh = {
   products: {
     eyebrow: 'Desserts',
     title: '商品介紹',
-    body: '正式販售品項如下。若需大量訂購或合作需求，歡迎透過 Instagram 私訊洽詢。',
     priceLabel: '價格',
     storageLabel: '保存方式',
   },

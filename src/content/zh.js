@@ -61,7 +61,7 @@ export const zh = {
       },
       {
         year: '2022–2023',
-        title: 'A B法國人的甜點店｜師傅',
+        title: 'A B法國人的甜點店｜甜點師傅',
       },
       {
         year: '2023–',

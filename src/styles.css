@@ -86,8 +86,13 @@ select {
 .brand-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
   text-align: left;
+}
+
+.header-logo {
+  display: block;
+  width: clamp(210px, 24vw, 285px);
+  height: auto;
 }
 
 .brand-mark {
@@ -919,21 +924,11 @@ h2 {
   }
 
   .brand-lockup {
-    gap: 10px;
+    max-width: 230px;
   }
 
-  .brand-mark {
-    width: 48px;
-    height: 48px;
-    font-size: 1.1rem;
-  }
-
-  .brand-lockup strong {
-    font-size: 1.2rem;
-  }
-
-  .brand-lockup small {
-    font-size: 0.68rem;
+  .header-logo {
+    width: 224px;
   }
 
   .language-select span {
@@ -1052,24 +1047,11 @@ h2 {
     grid-column: 1 / -1;
     grid-row: 1;
     justify-self: center;
-    gap: 9px;
+    max-width: 214px;
   }
 
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-    font-size: 1rem;
-  }
-
-  .brand-lockup strong {
-    font-size: 1.06rem;
-    line-height: 1.08;
-  }
-
-  .brand-lockup small {
-    margin-top: 2px;
-    font-size: 0.6rem;
-    letter-spacing: 0.08em;
+  .header-logo {
+    width: 214px;
   }
 
   .language-select {

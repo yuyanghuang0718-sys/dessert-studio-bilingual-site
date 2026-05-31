@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import InstagramIcon from './InstagramIcon.jsx';
 import { navigation } from '../config/navigation.js';
+import headerLogo from '../assets/timmy-dessert-header-logo.svg';
 
 function Header({ content, language, onLanguageChange }) {
   return (
@@ -19,13 +20,11 @@ function Header({ content, language, onLanguageChange }) {
         </label>
 
         <Link className="brand-lockup" to="/">
-          <span className="brand-mark" aria-hidden="true">
-            {content.brand.mark}
-          </span>
-          <span>
-            <strong>{content.brand.name}</strong>
-            <small>{content.brand.subtitle}</small>
-          </span>
+          <img
+            className="header-logo"
+            src={headerLogo}
+            alt={`${content.brand.name} ${content.brand.subtitle}`}
+          />
         </Link>
 
         <div className="header-icons" aria-label="Header actions">

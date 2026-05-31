@@ -1,6 +1,26 @@
 import chefPhoto from '../assets/chef-photo.png';
 import brandImage from '../assets/timmy-dessert-logo.png';
 
+function Timeline({ content }) {
+  return (
+    <div className="chef-timeline-block">
+      <div className="timeline-heading">
+        <p className="eyebrow">{content.chef.timelineEyebrow}</p>
+        <h3>{content.chef.timelineTitle}</h3>
+      </div>
+      <div className="chef-timeline">
+        {content.chef.timeline.map((item) => (
+          <article className="timeline-item" key={`${item.year}-${item.title}`}>
+            <time>{item.year}</time>
+            <span aria-hidden="true" />
+            <p>{item.title}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function About({ content }) {
   return (
     <section className="content-section about-section" id="about">
@@ -35,22 +55,7 @@ function About({ content }) {
           <h2>{content.chef.title}</h2>
           <p className="section-body">{content.chef.body}</p>
           <blockquote>{content.chef.philosophy}</blockquote>
-        </div>
-      </div>
-
-      <div className="section-inner chef-timeline-section">
-        <div className="timeline-heading">
-          <p className="eyebrow">{content.chef.timelineEyebrow}</p>
-          <h2>{content.chef.timelineTitle}</h2>
-        </div>
-        <div className="chef-timeline">
-          {content.chef.timeline.map((item) => (
-            <article className="timeline-item" key={`${item.year}-${item.title}`}>
-              <time>{item.year}</time>
-              <span aria-hidden="true" />
-              <p>{item.title}</p>
-            </article>
-          ))}
+          <Timeline content={content} />
         </div>
       </div>
     </section>

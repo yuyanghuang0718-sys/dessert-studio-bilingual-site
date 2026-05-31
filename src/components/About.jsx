@@ -4,9 +4,6 @@ import brandImage from '../assets/timmy-dessert-logo.png';
 function Timeline({ content }) {
   return (
     <div className="chef-timeline-block">
-      <div className="timeline-heading">
-        <h3>{content.chef.timelineTitle}</h3>
-      </div>
       <div className="chef-timeline">
         {content.chef.timeline.map((item) => (
           <article className="timeline-item" key={`${item.year}-${item.title}`}>

@@ -620,20 +620,6 @@ h2 {
   margin-top: 34px;
 }
 
-.timeline-heading {
-  max-width: 760px;
-  margin-bottom: 20px;
-}
-
-.timeline-heading h3 {
-  margin: 0;
-  color: var(--cocoa);
-  font-size: clamp(1.32rem, 2.2vw, 1.9rem);
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1.28;
-}
-
 .chef-timeline {
   display: grid;
   gap: 0;
@@ -1244,21 +1230,6 @@ h2 {
     order: 6;
     width: 100%;
     margin-top: 22px;
-  }
-
-  .timeline-heading {
-    margin-bottom: 18px;
-  }
-
-  .timeline-heading .eyebrow {
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  .timeline-heading h3 {
-    font-size: 1.55rem;
-    line-height: 1.25;
-    text-align: left;
   }
 
   .chef-timeline {

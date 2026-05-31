@@ -93,8 +93,7 @@ export const zh = {
     body: '歡迎透過 Instagram 私訊詢問甜點預訂、大量訂購與合作需求。',
     details: [
       { label: 'Instagram', value: '@timmy_dessert' },
-      { label: '販售地點', value: '粿好日' },
-      { label: '地址', value: '臺中市北屯區中清路二段552巷27號' },
+      { label: '販售地點', value: '粿好日（臺中市北屯區中清路二段552巷27號）' },
     ],
     button: '前往 Instagram',
   },

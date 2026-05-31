@@ -93,10 +93,9 @@ export const en = {
     body: 'Please contact us via Instagram DM for dessert pre-orders, bulk orders, and collaboration inquiries.',
     details: [
       { label: 'Instagram', value: '@timmy_dessert' },
-      { label: 'Location', value: 'Guo Hao Ri' },
       {
-        label: 'Address',
-        value: 'No. 27, Ln. 552, Sec. 2, Zhongqing Rd., Beitun Dist., Taichung City',
+        label: 'Location',
+        value: 'Guo Hao Ri (No. 27, Ln. 552, Sec. 2, Zhongqing Rd., Beitun Dist., Taichung City)',
       },
     ],
     button: 'Visit Instagram',

@@ -5,7 +5,6 @@ function Timeline({ content }) {
   return (
     <div className="chef-timeline-block">
       <div className="timeline-heading">
-        <p className="eyebrow">{content.chef.timelineEyebrow}</p>
         <h3>{content.chef.timelineTitle}</h3>
       </div>
       <div className="chef-timeline">

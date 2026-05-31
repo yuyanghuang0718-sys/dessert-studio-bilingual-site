@@ -52,7 +52,6 @@ export const en = {
     photoAlt: 'Chef portrait for Timmy Dessert',
     body: 'Our chef transforms French pastry techniques into approachable everyday flavors, refining cookie texture, butter aroma, and chilled dessert mouthfeel with a standard of clarity and consistency.',
     philosophy: '“Dessert does not need excessive decoration. The right aroma, texture, and warmth can become a remembered gesture.”',
-    timelineEyebrow: 'Journey',
     timelineTitle: 'Education and Experience',
     timeline: [
       {

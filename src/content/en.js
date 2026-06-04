@@ -38,8 +38,8 @@ export const en = {
     link: 'About Timmy Dessert',
   },
   about: {
-    eyebrow: 'Brand Introduction',
-    title: 'Handcrafted desserts with quiet detail and warmth',
+    eyebrow: 'Our Story',
+    title: 'Handcrafted With Care',
     imageAlt: 'Timmy Dessert and 荼蘼甜點 brand logo',
     paragraphs: [
       'Timmy Dessert, also known as 荼蘼甜點, was founded in 2025 as a personal dessert studio created by pastry chef Timmy',
@@ -50,8 +50,8 @@ export const en = {
     ],
   },
   chef: {
-    eyebrow: 'Chef Profile',
-    title: 'Balancing refined technique with everyday warmth',
+    eyebrow: 'Our Chef',
+    title: 'Sweetness in Every Moment',
     photoAlt: 'Chef portrait for Timmy Dessert',
     body: 'Our chef transforms French pastry techniques into approachable everyday flavors, refining cookie texture, butter aroma, and chilled dessert mouthfeel with a standard of clarity and consistency.',
     philosophy:

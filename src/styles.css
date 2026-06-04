@@ -66,21 +66,44 @@ select {
   padding: 16px 28px;
 }
 
-.language-select {
+.language-switch {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   width: fit-content;
-  color: var(--muted);
+  margin-left: clamp(40px, 4vw, 60px);
+  color: #8a746b;
+  font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
   font-size: 0.88rem;
+  line-height: 1;
 }
 
-.language-select select {
-  border: 1px solid var(--line);
-  border-radius: 999px;
+.language-switch button {
+  border: 0;
   color: var(--cocoa);
-  background: var(--white);
-  padding: 8px 34px 8px 14px;
+  background: transparent;
+  padding: 4px 0;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.68;
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.language-switch button:hover {
+  color: #5f4238;
+  opacity: 1;
+}
+
+.language-switch button.active {
+  color: #9d6c58;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.language-switch span {
+  color: #c7b4aa;
 }
 
 .brand-lockup {
@@ -465,13 +488,13 @@ h2 {
 
 .brand-introduction {
   display: grid;
-  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.22fr);
-  gap: clamp(36px, 7vw, 96px);
+  grid-template-columns: minmax(320px, 0.96fr) minmax(0, 1.04fr);
+  gap: clamp(34px, 5.5vw, 76px);
   align-items: center;
 }
 
 .brand-introduction-copy {
-  max-width: 560px;
+  max-width: 620px;
 }
 
 .brand-introduction-copy h2 {
@@ -528,6 +551,9 @@ h2 {
 }
 
 .brand-introduction-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -538,26 +564,22 @@ h2 {
 .brand-introduction-image img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
-.brand-logo-card {
-  display: flex;
-  min-height: 360px;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
+.brand-visual-card {
+  min-height: 520px;
+  padding: 10px;
 }
 
-.brand-logo-card img {
-  width: 96%;
+.brand-visual-card img {
+  width: min(100%, 540px);
   height: auto;
-  max-height: 96%;
+  max-height: 540px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  transform: scale(1.12);
-  transform-origin: center;
 }
 
 .chef-profile {
@@ -903,7 +925,7 @@ h2 {
     justify-self: center;
   }
 
-  .language-select {
+  .language-switch {
     grid-row: 2;
   }
 
@@ -949,17 +971,8 @@ h2 {
     width: 224px;
   }
 
-  .language-select span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-  }
-
-  .language-select select {
-    max-width: 142px;
-    padding: 8px 12px;
+  .language-switch {
+    margin-left: 4px;
     font-size: 0.86rem;
   }
 
@@ -1022,19 +1035,17 @@ h2 {
     margin: 22px 0 28px;
   }
 
-  .brand-introduction-image img {
-    aspect-ratio: 4 / 3;
+  .brand-visual-card {
+    min-height: 300px;
+    padding: 8px;
   }
 
-  .brand-logo-card {
-    min-height: 240px;
-    padding: 6px;
-  }
-
-  .brand-logo-card img {
-    width: 94%;
-    max-height: 94%;
+  .brand-visual-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
     aspect-ratio: 1 / 1;
+    object-fit: contain;
   }
 
   .chef-profile {
@@ -1072,18 +1083,12 @@ h2 {
     width: 214px;
   }
 
-  .language-select {
+  .language-switch {
     grid-column: 1;
     grid-row: 2;
-    gap: 7px;
+    gap: 8px;
+    margin-left: 2px;
     font-size: 0.82rem;
-  }
-
-  .language-select select {
-    max-width: 126px;
-    min-height: 36px;
-    padding: 6px 26px 6px 12px;
-    font-size: 0.84rem;
   }
 
   .header-icons {
@@ -1175,20 +1180,21 @@ h2 {
     line-height: 1.65;
   }
 
-  .brand-introduction-image img {
-    aspect-ratio: 4 / 3;
-  }
-
   .brand-introduction-image {
     margin-bottom: 4px;
   }
 
-  .brand-logo-card img {
-    width: 94%;
-    max-height: 94%;
+  .brand-visual-card {
+    min-height: 280px;
+    padding: 6px;
+  }
+
+  .brand-visual-card img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-    transform: scale(1.1);
   }
 
   .chef-profile {

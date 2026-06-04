@@ -1,5 +1,5 @@
 import chefPhoto from '../assets/chef-photo.png';
-import brandImage from '../assets/timmy-dessert-logo.png';
+import brandVisual from '../assets/timmy-dessert-logo.png';
 
 function Timeline({ content }) {
   return (
@@ -21,6 +21,9 @@ function About({ content }) {
   return (
     <section className="content-section about-section" id="about">
       <div className="section-inner brand-introduction">
+        <div className="brand-introduction-image brand-visual-card">
+          <img src={brandVisual} alt={content.about.imageAlt} />
+        </div>
         <div className="brand-introduction-copy">
           <p className="eyebrow">{content.about.eyebrow}</p>
           <h2>{content.about.title}</h2>
@@ -41,9 +44,6 @@ function About({ content }) {
               <span key={line}>{line}</span>
             ))}
           </div>
-        </div>
-        <div className="brand-introduction-image brand-logo-card">
-          <img src={brandImage} alt={content.about.imageAlt} />
         </div>
       </div>
 

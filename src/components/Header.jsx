@@ -7,17 +7,25 @@ function Header({ content, language, onLanguageChange }) {
   return (
     <header className="site-header">
       <div className="utility-bar">
-        <label className="language-select">
-          <span>{content.languageMenuLabel}</span>
-          <select
-            value={language}
-            onChange={(event) => onLanguageChange(event.target.value)}
-            aria-label={content.languageMenuLabel}
+        <div className="language-switch" aria-label={content.languageMenuLabel}>
+          <button
+            type="button"
+            className={language === 'zh' ? 'active' : undefined}
+            onClick={() => onLanguageChange('zh')}
+            aria-pressed={language === 'zh'}
           >
-            <option value="en">English</option>
-            <option value="zh">繁體中文</option>
-          </select>
-        </label>
+            中文
+          </button>
+          <span aria-hidden="true">|</span>
+          <button
+            type="button"
+            className={language === 'en' ? 'active' : undefined}
+            onClick={() => onLanguageChange('en')}
+            aria-pressed={language === 'en'}
+          >
+            English
+          </button>
+        </div>
 
         <Link className="brand-lockup" to="/">
           <img

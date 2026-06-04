@@ -506,6 +506,10 @@ h2 {
   .site-shell[data-language='en'] .chef-copy h2 {
     font-size: clamp(1.65rem, 2.8vw, 2.95rem);
   }
+
+  .site-shell[data-language='en'] .brand-logo-card {
+    margin-top: clamp(56px, 5vw, 84px);
+  }
 }
 
 .brand-divider {
@@ -559,7 +563,7 @@ h2 {
   aspect-ratio: 1094 / 1165;
   align-self: start;
   justify-self: end;
-  margin-top: clamp(148px, 14vw, 214px);
+  margin-top: 0;
   padding: 0;
 }
 

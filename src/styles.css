@@ -488,7 +488,7 @@ h2 {
 
 .brand-introduction {
   display: grid;
-  grid-template-columns: minmax(320px, 1fr) minmax(320px, 0.92fr);
+  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
   gap: clamp(38px, 5.8vw, 82px);
   align-items: start;
 }
@@ -553,10 +553,10 @@ h2 {
 
 .brand-visual-card {
   width: 100%;
-  max-width: 500px;
+  max-width: 680px;
   aspect-ratio: 1 / 1;
   justify-self: end;
-  margin-top: 46px;
+  margin-top: 28px;
   padding: 0;
 }
 
@@ -940,7 +940,7 @@ h2 {
 
   .brand-visual-card {
     justify-self: center;
-    max-width: 520px;
+    max-width: 640px;
     margin-top: 34px;
   }
 
@@ -1028,7 +1028,7 @@ h2 {
   }
 
   .brand-visual-card {
-    width: min(100%, 340px);
+    width: min(100%, 420px);
     min-height: 0;
     margin-top: 30px;
     padding: 0;
@@ -1173,7 +1173,7 @@ h2 {
   }
 
   .brand-visual-card {
-    width: min(100%, 330px);
+    width: min(100%, 390px);
     min-height: 0;
     margin-top: 28px;
     padding: 0;

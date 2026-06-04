@@ -1,12 +1,10 @@
-import { Link, NavLink } from 'react-router-dom';
-import InstagramIcon from './InstagramIcon.jsx';
+import { NavLink } from 'react-router-dom';
 import { navigation } from '../config/navigation.js';
-import headerLogo from '../assets/timmy-dessert-header-full-logo.png';
 
 function Header({ content, language, onLanguageChange }) {
   return (
     <header className="site-header">
-      <div className="utility-bar">
+      <nav className="main-nav" aria-label="Primary navigation">
         <div className="language-switch" aria-label={content.languageMenuLabel}>
           <button
             type="button"
@@ -27,29 +25,6 @@ function Header({ content, language, onLanguageChange }) {
           </button>
         </div>
 
-        <Link className="brand-lockup" to="/">
-          <img
-            className="header-logo"
-            src={headerLogo}
-            alt={`${content.brand.name} ${content.brand.subtitle}`}
-          />
-        </Link>
-
-        <div className="header-icons" aria-label="Header actions">
-          <a
-            className="instagram-link"
-            href={content.instagram.url}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={content.header.icons.instagram}
-            title={content.instagram.handle}
-          >
-            <InstagramIcon />
-          </a>
-        </div>
-      </div>
-
-      <nav className="main-nav" aria-label="Primary navigation">
         {navigation.map((item) => (
           <NavLink
             key={item.path}

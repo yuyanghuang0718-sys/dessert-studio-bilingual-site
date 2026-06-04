@@ -265,6 +265,12 @@ select {
   font-size: 1rem;
 }
 
+.main-nav .language-switch {
+  flex: 0 0 auto;
+  margin-left: 0;
+  margin-right: clamp(60px, 7vw, 100px);
+}
+
 .main-nav a {
   position: relative;
   white-space: nowrap;
@@ -1019,6 +1025,11 @@ h2 {
     font-size: 0.92rem;
   }
 
+  .main-nav .language-switch {
+    margin-right: 22px;
+    font-size: 0.86rem;
+  }
+
   .hero-section {
     padding: 20px 14px 46px;
   }
@@ -1146,6 +1157,11 @@ h2 {
     font-size: 0.92rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+  }
+
+  .main-nav .language-switch {
+    margin-right: 22px;
+    font-size: 0.82rem;
   }
 
   .main-nav::-webkit-scrollbar {

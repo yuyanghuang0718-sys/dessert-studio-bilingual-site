@@ -54,7 +54,8 @@ export const en = {
     title: 'Balancing refined technique with everyday warmth',
     photoAlt: 'Chef portrait for Timmy Dessert',
     body: 'Our chef transforms French pastry techniques into approachable everyday flavors, refining cookie texture, butter aroma, and chilled dessert mouthfeel with a standard of clarity and consistency.',
-    philosophy: '“Dessert does not need excessive decoration. The right aroma, texture, and warmth can become a remembered gesture.”',
+    philosophy:
+      '“I have always believed that dessert is a form of art. Every dessert is thoughtfully crafted to bring warmth, connect people, and turn ordinary moments into lasting memories.”',
     timeline: [
       {
         year: '2018–2022',

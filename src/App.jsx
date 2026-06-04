@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header.jsx';
-import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ProductsPage from './pages/ProductsPage.jsx';
 import NoticePage from './pages/NoticePage.jsx';
@@ -24,7 +23,7 @@ function App() {
         <Header content={content} language={language} onLanguageChange={setLanguage} />
         <main>
           <Routes>
-            <Route path="/" element={<HomePage content={content} />} />
+            <Route path="/" element={<AboutPage content={content} />} />
             <Route path="/about" element={<AboutPage content={content} />} />
             <Route path="/products" element={<ProductsPage content={content} language={language} />} />
             <Route path="/notice" element={<NoticePage content={content} />} />

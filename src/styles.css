@@ -126,45 +126,15 @@ select {
 .brand-lockup {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   text-align: left;
 }
 
 .header-logo {
   display: block;
-  width: clamp(210px, 24vw, 285px);
-  height: auto;
-}
-
-.brand-mark {
-  display: grid;
-  width: 62px;
-  height: 62px;
-  place-items: center;
-  border: 1px solid var(--mist-pink);
-  border-radius: 50%;
-  color: var(--mist-pink);
-  background: radial-gradient(circle at 50% 42%, #fff 0 28%, #f9e8e5 29% 52%, #fff 53%);
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-.brand-lockup strong {
-  display: block;
-  color: #4c3a35;
-  font-size: clamp(1.25rem, 2vw, 1.95rem);
-  letter-spacing: 0;
-  line-height: 1.1;
-}
-
-.brand-lockup small {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-family: "Inter", "Segoe UI", sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  width: auto;
+  height: 80px;
+  object-fit: contain;
 }
 
 .header-icons {
@@ -1017,11 +987,12 @@ h2 {
   }
 
   .brand-lockup {
-    max-width: 230px;
+    max-width: none;
   }
 
   .header-logo {
-    width: 224px;
+    width: auto;
+    height: 55px;
   }
 
   .language-switch {
@@ -1133,11 +1104,12 @@ h2 {
     grid-column: 1 / -1;
     grid-row: 1;
     justify-self: center;
-    max-width: 214px;
+    max-width: none;
   }
 
   .header-logo {
-    width: 214px;
+    width: auto;
+    height: 55px;
   }
 
   .language-switch {

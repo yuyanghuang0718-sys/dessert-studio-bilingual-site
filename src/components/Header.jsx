@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import InstagramIcon from './InstagramIcon.jsx';
 import { navigation } from '../config/navigation.js';
-import headerLogo from '../assets/timmy-dessert-header-logo.svg';
+import headerLogo from '../assets/timmy-dessert-header-full-logo.png';
 
 function Header({ content, language, onLanguageChange }) {
   return (

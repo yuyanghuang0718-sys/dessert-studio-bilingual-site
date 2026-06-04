@@ -31,6 +31,21 @@ function Contact({ content }) {
               </p>
             ),
           )}
+          <a
+            className="contact-map-card"
+            href={content.contact.map.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={content.contact.map.ariaLabel}
+          >
+            <span className="map-preview" aria-hidden="true">
+              <i className="map-road map-road-main" />
+              <i className="map-road map-road-side" />
+              <i className="map-pin" />
+              <b>{content.contact.map.place}</b>
+            </span>
+            <span className="map-link-text">{content.contact.map.linkText}</span>
+          </a>
         </div>
       </div>
     </section>

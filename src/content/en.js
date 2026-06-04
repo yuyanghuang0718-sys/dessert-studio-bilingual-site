@@ -98,6 +98,12 @@ export const en = {
         value: 'Guo Hao Ri (No. 27, Ln. 552, Sec. 2, Zhongqing Rd., Beitun Dist., Taichung City)',
       },
     ],
+    map: {
+      place: 'Guo Hao Ri',
+      linkText: 'Open Google Maps',
+      ariaLabel: 'Open Guo Hao Ri in Google Maps',
+      url: 'https://www.google.com/maps/search/?api=1&query=粿好日%20臺中市北屯區中清路二段552巷27號',
+    },
     button: 'Visit Instagram',
   },
 };

@@ -95,6 +95,12 @@ export const zh = {
       { label: 'Instagram', value: '@timmy_dessert' },
       { label: '販售地點', value: '粿好日（臺中市北屯區中清路二段552巷27號）' },
     ],
+    map: {
+      place: '粿好日',
+      linkText: '開啟 Google Maps',
+      ariaLabel: '在 Google Maps 開啟粿好日位置',
+      url: 'https://www.google.com/maps/search/?api=1&query=粿好日%20臺中市北屯區中清路二段552巷27號',
+    },
     button: '前往 Instagram',
   },
 };

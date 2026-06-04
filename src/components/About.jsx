@@ -1,5 +1,5 @@
 import chefPhoto from '../assets/chef-photo.png';
-import brandVisual from '../assets/timmy-dessert-logo-correct.png';
+import brandVisual from '../assets/timmy-dessert-logo-cropped.png';
 
 function Timeline({ content }) {
   return (

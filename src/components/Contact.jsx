@@ -33,13 +33,13 @@ function Contact({ content }) {
             ),
           )}
           <a
-            className="contact-map-card"
+            className="map-image-card"
             href={content.contact.map.url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={content.contact.map.ariaLabel}
           >
-            <img src={contactMap} alt={content.contact.map.imageAlt} />
+            <img className="map-image" src={contactMap} alt={content.contact.map.imageAlt} />
           </a>
         </div>
       </div>

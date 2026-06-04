@@ -37,14 +37,14 @@ function About({ content }) {
             ))}
           </div>
         </div>
-        <div className="brand-introduction-image brand-visual-card">
-          <img src={brandVisual} alt={content.about.imageAlt} />
+        <div className="image-card brand-image-card">
+          <img className="brand-image" src={brandVisual} alt={content.about.imageAlt} />
         </div>
       </div>
 
       <div className="section-inner chef-profile">
-        <div className="chef-photo-frame">
-          <img src={chefPhoto} alt={content.chef.photoAlt} />
+        <div className="image-card chef-image-card">
+          <img className="chef-image" src={chefPhoto} alt={content.chef.photoAlt} />
         </div>
         <div className="chef-copy">
           <p className="eyebrow">{content.chef.eyebrow}</p>

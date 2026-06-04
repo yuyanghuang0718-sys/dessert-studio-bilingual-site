@@ -565,9 +565,7 @@ h2 {
   height: 100%;
   max-height: none;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
-  transform: scale(1.08);
-  transform-origin: center;
+  object-fit: contain;
 }
 
 .chef-profile {
@@ -1041,8 +1039,7 @@ h2 {
     height: 100%;
     max-height: none;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
-    transform: scale(1.07);
+    object-fit: contain;
   }
 
   .chef-profile {
@@ -1187,8 +1184,7 @@ h2 {
     height: 100%;
     max-height: none;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
-    transform: scale(1.07);
+    object-fit: contain;
   }
 
   .chef-profile {

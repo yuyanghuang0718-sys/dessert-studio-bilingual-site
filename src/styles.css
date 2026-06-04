@@ -913,12 +913,13 @@ h2 {
   margin-top: 10px;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--white);
   color: var(--cocoa);
   text-decoration: none;
   box-shadow: 0 12px 30px rgba(91, 62, 43, 0.08);
   cursor: pointer;
+  aspect-ratio: 16 / 9;
   transition:
     opacity 160ms ease,
     transform 160ms ease;
@@ -932,8 +933,8 @@ h2 {
 .contact-map-card img {
   display: block;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -1174,10 +1175,6 @@ h2 {
   .contact-panel {
     grid-template-columns: minmax(0, 1fr);
     gap: 26px;
-  }
-
-  .contact-map-card img {
-    height: 180px;
   }
 
   .brand-introduction-copy,

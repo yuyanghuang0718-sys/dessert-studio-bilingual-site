@@ -40,11 +40,15 @@ export const en = {
   about: {
     eyebrow: 'Brand Introduction',
     title: 'Handcrafted desserts with quiet detail and warmth',
-    imageAlt: 'Timmy Dessert brand dessert image',
+    imageAlt: 'Timmy Dessert and 荼蘼甜點 brand logo',
     paragraphs: [
-      'Timmy Dessert is a small-batch dessert brand focused on handcrafted cookies, French pastries, and chilled desserts.',
-      'We value ingredient texture, proper storage, and a refined gifting experience, creating sweets that feel clean, elegant, and warmly memorable.',
+      'Timmy Dessert, also known as 荼蘼甜點, was founded in 2025 as a personal dessert studio created by pastry chef Timmy',
+      'The name “荼蘼” comes from the classical line “開到荼蘼花事了”, describing the moment when the blooming of the flower marks the final chapter of spring. It represents beauty at its fullest, while reminding us to cherish every fleeting moment',
+      'To us, dessert is like the 荼蘼 flower. It may be brief, yet it can leave a warm and lasting memory in a particular moment of life',
+      'That is why every dessert is made by hand, with simple ingredients and careful craftsmanship, so a quiet sense of happiness can become part of everyday life',
+      'Whether celebrating an important occasion or rewarding yourself on an ordinary day, we hope every dessert becomes a memory worth keeping',
     ],
+    signature: ['荼蘼甜點 Timmy Dessert', 'Made with care, sweetened for life'],
   },
   chef: {
     eyebrow: 'Chef Profile',

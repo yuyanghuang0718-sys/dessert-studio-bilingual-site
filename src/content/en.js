@@ -100,7 +100,7 @@ export const en = {
     ],
     map: {
       place: 'Guo Hao Ri',
-      linkText: 'Open Google Maps',
+      imageAlt: 'Google Maps location for Guo Hao Ri',
       ariaLabel: 'Open Guo Hao Ri in Google Maps',
       url: 'https://www.google.com/maps/search/?api=1&query=粿好日%20臺中市北屯區中清路二段552巷27號',
     },

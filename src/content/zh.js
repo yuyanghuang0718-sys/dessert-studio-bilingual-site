@@ -97,7 +97,7 @@ export const zh = {
     ],
     map: {
       place: '粿好日',
-      linkText: '開啟 Google Maps',
+      imageAlt: '粿好日 Google Maps 地圖位置',
       ariaLabel: '在 Google Maps 開啟粿好日位置',
       url: 'https://www.google.com/maps/search/?api=1&query=粿好日%20臺中市北屯區中清路二段552巷27號',
     },

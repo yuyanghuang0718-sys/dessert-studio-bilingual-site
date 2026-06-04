@@ -1,4 +1,5 @@
 import InstagramIcon from './InstagramIcon.jsx';
+import contactMap from '../assets/contact-map-guo-hao-ri.png';
 
 function Contact({ content }) {
   return (
@@ -38,13 +39,7 @@ function Contact({ content }) {
             rel="noopener noreferrer"
             aria-label={content.contact.map.ariaLabel}
           >
-            <span className="map-preview" aria-hidden="true">
-              <i className="map-road map-road-main" />
-              <i className="map-road map-road-side" />
-              <i className="map-pin" />
-              <b>{content.contact.map.place}</b>
-            </span>
-            <span className="map-link-text">{content.contact.map.linkText}</span>
+            <img src={contactMap} alt={content.contact.map.imageAlt} />
           </a>
         </div>
       </div>

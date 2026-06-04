@@ -39,7 +39,7 @@ export const zh = {
   },
   about: {
     eyebrow: '品牌介紹',
-    title: '匠心手作',
+    title: '荼蘼甜點',
     imageAlt: '荼蘼甜點 Timmy Dessert 品牌 Logo',
     paragraphs: [
       '荼蘼甜點 Timmy Dessert 創立於 2025 年，是由甜點師 Timmy 一手打造的個人甜點工作室',
@@ -51,7 +51,7 @@ export const zh = {
   },
   chef: {
     eyebrow: '主廚介紹',
-    title: '甜入心扉',
+    title: 'Timmy Chen',
     photoAlt: '荼蘼甜點主廚照片',
     body: '主廚擅長將法式甜點技法轉化成日常可親近的風味，從餅乾酥度、奶油香氣到冷藏甜點的口感，都以穩定、細緻與乾淨為標準。',
     philosophy:

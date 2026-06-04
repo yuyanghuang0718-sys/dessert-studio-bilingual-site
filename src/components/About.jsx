@@ -36,11 +36,6 @@ function About({ content }) {
               </p>
             ))}
           </div>
-          <div className="brand-signature">
-            {content.about.signature.map((line) => (
-              <span key={line}>{line}</span>
-            ))}
-          </div>
         </div>
         <div className="brand-introduction-image brand-visual-card">
           <img src={brandVisual} alt={content.about.imageAlt} />

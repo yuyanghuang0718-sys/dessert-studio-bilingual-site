@@ -48,7 +48,6 @@ export const en = {
       'That is why every dessert is made by hand, with simple ingredients and careful craftsmanship, so a quiet sense of happiness can become part of everyday life',
       'Whether celebrating an important occasion or rewarding yourself on an ordinary day, we hope every dessert becomes a memory worth keeping',
     ],
-    signature: ['荼蘼甜點 Timmy Dessert', 'Made with care, sweetened for life'],
   },
   chef: {
     eyebrow: 'Chef Profile',

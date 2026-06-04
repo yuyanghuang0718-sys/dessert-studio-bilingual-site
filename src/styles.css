@@ -501,6 +501,11 @@ h2 {
   max-width: 9em;
 }
 
+.site-shell[data-language='en'] .brand-introduction-copy h2 {
+  font-size: clamp(1.7rem, 2.85vw, 2.8rem);
+  max-width: 10em;
+}
+
 .brand-divider {
   display: grid;
   grid-template-columns: minmax(54px, 1fr) auto minmax(54px, 1fr);
@@ -566,9 +571,9 @@ h2 {
   height: 100%;
   max-height: none;
   aspect-ratio: auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  transform: scale(1.06);
+  transform: none;
 }
 
 .chef-profile {
@@ -1045,9 +1050,9 @@ h2 {
     height: 100%;
     max-height: none;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    transform: scale(1.04);
+    transform: none;
   }
 
   .chef-profile {
@@ -1193,9 +1198,9 @@ h2 {
     height: 100%;
     max-height: none;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    transform: scale(1.03);
+    transform: none;
   }
 
   .chef-profile {

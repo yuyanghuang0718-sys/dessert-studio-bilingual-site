@@ -20,7 +20,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="site-shell">
+      <div className="site-shell" data-language={language}>
         <Header content={content} language={language} onLanguageChange={setLanguage} />
         <main>
           <Routes>

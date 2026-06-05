@@ -53,7 +53,7 @@ export const en = {
     eyebrow: 'Our Chef',
     title: 'Timmy Chen',
     photoAlt: 'Chef portrait for Timmy Dessert',
-    body: 'Our chef transforms French pastry techniques into approachable everyday flavors, refining cookie texture, butter aroma, and chilled dessert mouthfeel with a standard of clarity and consistency.',
+    body: 'Timmy brings the refined craftsmanship of French pastry into desserts that feel warm and approachable. He believes that truly memorable desserts are not defined by elaborate decoration, but by the perfect balance of texture, aroma, and warmth.',
     philosophy:
       '“I have always believed that dessert is a form of art. Every dessert is thoughtfully crafted to bring warmth, connect people, and turn ordinary moments into lasting memories.”',
     timeline: [

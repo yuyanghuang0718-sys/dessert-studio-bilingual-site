@@ -1189,6 +1189,10 @@ h2 {
     gap: 26px;
   }
 
+  .brand-introduction {
+    gap: 10px;
+  }
+
   .brand-introduction-copy,
   .chef-copy {
     max-width: none;
@@ -1199,6 +1203,7 @@ h2 {
   }
 
   .brand-introduction-copy .eyebrow {
+    margin-bottom: 0;
     order: 1;
   }
 
@@ -1240,7 +1245,7 @@ h2 {
   .brand-divider {
     grid-template-columns: minmax(42px, 1fr) auto minmax(42px, 1fr);
     gap: 13px;
-    margin: 18px 0 24px;
+    margin: 6px 0 8px;
   }
 
   .brand-paragraphs {
@@ -1248,14 +1253,14 @@ h2 {
   }
 
   .brand-logo-card {
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .brand-logo-card {
     width: min(100%, 390px);
     min-height: 0;
     aspect-ratio: 1094 / 1165;
-    margin-top: 28px;
+    margin-top: 0;
     padding: 0;
   }
 

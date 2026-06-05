@@ -1194,6 +1194,30 @@ h2 {
     max-width: none;
   }
 
+  .brand-introduction-copy {
+    display: contents;
+  }
+
+  .brand-introduction-copy .eyebrow {
+    order: 1;
+  }
+
+  .brand-introduction-copy h2 {
+    order: 2;
+  }
+
+  .brand-divider {
+    order: 3;
+  }
+
+  .brand-logo-card {
+    order: 4;
+  }
+
+  .brand-paragraphs {
+    order: 5;
+  }
+
   .eyebrow {
     margin-bottom: 10px;
     font-size: 0.74rem;

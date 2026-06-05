@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <p>
-        <span>© 2025 Timmy Dessert. All Rights Reserved.</span>
+        <span>© 2026 Timmy Dessert. All Rights Reserved.</span>
         <span className="footer-separator" aria-hidden="true">
           |
         </span>

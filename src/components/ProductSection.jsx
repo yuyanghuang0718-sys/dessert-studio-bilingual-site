@@ -1,5 +1,13 @@
 import { products } from '../data/products.js';
 
+function formatPrice(price, language) {
+  if (language !== 'en') {
+    return price;
+  }
+
+  return price.replace('／個', ' / each').replace('／盒', ' / box');
+}
+
 function ProductSection({ content, language }) {
   const secondaryLanguage = language === 'zh' ? 'en' : 'zh';
 
@@ -25,7 +33,7 @@ function ProductSection({ content, language }) {
                 <dl className="product-meta">
                   <div>
                     <dt>{content.products.priceLabel}</dt>
-                    <dd>{product.price}</dd>
+                    <dd>{formatPrice(product.price, language)}</dd>
                   </div>
                   <div>
                     <dt>{content.products.storageLabel}</dt>
